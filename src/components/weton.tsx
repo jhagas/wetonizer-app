@@ -20,7 +20,7 @@ export default function Weton() {
         Pilih Tanggal (Masehi)
       </p>
       <div className="flex flex-row items-center justify-center gap-2">
-        <div className="flex justify-between items-center h-12 w-48 px-5 text-stone-700 dark:text-stone-300 bg-white dark:bg-zinc-700 rounded-lg border-transparent focus:outline-2 focus:outline-sky-500 shadow-md">
+        <div className="flex transition-colors duration-300 justify-between items-center h-12 w-48 px-5 text-stone-700 dark:text-stone-300 bg-white dark:bg-zinc-700 rounded-xl border-transparent focus:outline-2 focus:outline-sky-500 shadow-md">
           <input
             value={convertFormat(date)}
             onChange={(e) => setDate(new Date(e.target.value))}
