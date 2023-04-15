@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import { IoCalendar } from "react-icons/io5";
+import Info from "./info";
+
+export default function Weton() {
+  const [date, setDate] = useState(new Date());
+
+  function convertFormat(date: Date) {
+    return date.toISOString().split("T")[0];
+  }
+
+  return (
+    <div
+      className="flex flex-col w-full justify-center items-center"
+      style={{
+        height: "calc(100% - 5rem)",
+      }}
+    >
+      <p className="font-semibold text-slate-700 dark:text-stone-300 m-1">
+        Pilih Tanggal (Masehi)
+      </p>
+      <div className="flex flex-row items-center justify-center gap-2">
+        <div className="flex justify-between items-center h-12 w-48 px-5 text-stone-700 dark:text-stone-300 bg-white dark:bg-zinc-700 rounded-lg border-transparent focus:outline-2 focus:outline-sky-500 shadow-md">
+          <input
+            value={convertFormat(date)}
+            onChange={(e) => setDate(new Date(e.target.value))}
+            type="date"
+            className="flex items-center h-full w-full outline-none bg-transparent z-50"
+          />
+          <IoCalendar size="22px" className="fixed translate-x-32" />
+        </div>
+      </div>
+      <Info date={convertFormat(date)} />
+      <div className="fixed text-slate-500 text-xs bottom-3 text-center">
+        &copy; 2023, Jhagas Hana Winaya.{" "}
+        <a className="underline text-blue-700" href="https://github.com/jhagas/wetonizer-app">MIT License</a>
+      </div>
+    </div>
+  );
+}
