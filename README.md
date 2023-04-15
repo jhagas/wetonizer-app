@@ -1,38 +1,51 @@
+# Wetonizer Web-App
+
+## Next JS + TypeScript
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-First, run the development server:
+To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Javanese Calendar System
 
-## Deploy on Vercel
+I hardcode (as variable) the kurup (120 years cycle) to 24 March 1936, which the day when kurup Asapon began. Often time, the kurup cycle is determined by kasultanan yogya or mataram, so i think hardcoding should be the best option. The next kurup will happen in year 1986 Javanese (or maybe sooner). 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+More info about javanese calendar:
+1. [Wikipedia Bahasa Indonesia, kalender jawa](https://id.wikipedia.org/wiki/Kalender_Jawa)
+2. [Basic algorithm kalender jawa](http://kalenderimlek.blogspot.com/2017/11/warsa-lambang-dan-windu-dalam-kalender.html)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## About Algorithm
+Although javanese calendar is hardly based on hijri (islamic) calendar. It's not really the same. So taking gregorian to hijri algorithm and rename the name of month to javanese one often time get a pretty bad result.
+
+Everything is calculated from the days from epoch time to input date. Using some declarations (or definitions) taken from Wikipedia article above, i can calculate any value in javanese calendar (except Kurup).
+
+In the code I use the term 'biasa' and 'kabisat'. Biasa (Javanese:wastu) is an usual year, and kabisat (Javanese:wuntu) is a leap year
+
+## About `hariid/idHari` and `pasaranid/idPasaran`
+I suppose you know a little bit about javanese calendar from articles above. I take idPasaran and idHari from Epoch time (24 Mar 1936), not from UNIX Epoch.
+
+| ID  | Hari   | Pasaran |
+| --- | ------ | ------- |
+| 0   | Selasa | Pon     |
+| 1   | Rabu   | Wage    |
+| 2   | Kamis  | Kliwon  |
+| 3   | Jum'at | Legi    |
+| 4   | Sabtu  | Pahing  |
+| 5   | Minggu | -       |
+| 6   | Senin  | -       |
+
+## TO-DO
+- [ ] Dina ala as in this [article](https://primbonjawa21.blogspot.com/2019/01/dina-ala-twangke-samparwangke.html)
