@@ -96,68 +96,68 @@ export const mangsaBiasa = [32, 25, 25, 24, 23, 41, 41, 23, 24, 25, 27, 43, 10];
 export const mangsaKabisat = [32, 26, 25, 24, 23, 41, 41, 23, 24, 25, 27, 43, 10];
 export const pranataMangsa = [
   {
-    nama: "Kapitu (palguna)",
+    nama: "Kapitu (Palguna)",
     deskripsi:
-      "Benih padi mulai ditanam di sawah, banyak hujan, banyak sungai yang banjir. Penampakannya/ibaratnya : wisa kentar ing ing maruta (bisa larut dengan angin, itu masanya banyak penyakit). Musim banjir, badai longsor mulai tandur.",
+      "Benih padi mulai ditanam di sawah, banyak hujan dan angin, banyak sungai yang banjir, banyak penyakit. \"Wisa Kentar ing Maruta\".",
   },
   {
-    nama: "Kawolu (wasika)",
+    nama: "Kawolu (Wasika)",
     deskripsi:
-      "Padi mulai hijau, uret mulai banyak. Penampakannya/ibaratnya : anjrah jroning kayun (merata dalam keinginan, musimnya kucing kawin). Musim padi beristirahat, banyak ulat, banyak penyakit.",
+      "Padi mulai hijau, ulat padi mulai banyak, dan padi rawan berpenyakit, musim kucing kawin. \"Anjrah Jroning Kayun\".",
   },
   {
-    nama: "Kasanga (jita)",
+    nama: "Kasanga (Jita)",
     deskripsi:
-      "Padi mulai berkembang dan sebagian sudah berbuah, jangkrik mulai muncul, kucing mulai kawin, cenggeret mulai bersuara. Penampakannya/ibaratnya : wedaring wacara mulya ( binatang tanah dan pohon mulai bersuara). Musim padi berbunga, turaes (sebangsa serangga) ramai berbunyi.",
+      "Padi mulai berkembang dan sebagian sudah berisi, jangkrik mulai muncul, kucing mulai kawin, banyak serangga mulai bersuara. \"Wedaring Wacara Mulya\".",
   },
   {
-    nama: "Kasadasa (srawana)",
+    nama: "Kasadasa (Srawana)",
     deskripsi:
-      "Padi mulai menguning, mulai panen, banyak hewan hamil, burung-burung kecil mulai menetas telurnya. Penampakannya/ibaratnya : gedong minep jroning kalbu (masa hewan sedang hamil). Musim padi berisi tapi masih hijau, burung-burung membuat sarang, tanam palawija di lahan kering.",
+      "Padi mulai menguning, mulai panen, banyak hewan hamil, burung-burung kecil mulai menetas dan membuat sarang, tanam palawija di lahan kering. \"Gedong Minep Jroning Kalbu\".",
   },
   {
-    nama: "Dhesta (pradawana)",
+    nama: "Dhesta (Pradawana)",
     deskripsi:
-      "Seluruhnya memanen padi. Penampakannya/ibaratnya: sotya (anak burung) sinara wedi (disuapi makanan). Masih ada waktu untuk palawija, burung-burung menyuapi anaknya.",
+      "Seluruhnya memanen padi, masih ada waktu untuk palawija. \"Sotya (anak burung) Sinara Wedi (disuapi makanan)\".",
   },
   {
-    nama: "Sadha (asuji)",
+    nama: "Sadha (Asuji)",
     deskripsi:
-      "Para petani mulai menjemur padi dan memasukkan ke lumbung. Di sawah hanya tersisa dami. Penampakannya/ibaratnya : tirta (keringat) sah saking sasana (badan) (air pergi darisumbernya, masa ini musim dingin, jarang orang berkeringat, sebab sangat dingin). Musim menumpuk jerami,tanda-tanda udara dingin pada pagi hari.",
+      "Para petani mulai menjemur padi dan memasukkan ke lumbung. Di sawah hanya tersisa jerami. \"Tirta Sah Saking Sasana\" (air pergi dari sumbernya, masa ini musim dingin, jarang orang berkeringat).",
   },
   {
-    nama: "Kasa (kartika)",
+    nama: "Kasa (Kartika)",
     deskripsi:
-      "Para petani membakar dami yang tertinggal di sawah dan di masa ini dimulai menanam palawija, sejenis belalang masuk ke tanah, daun-daunan berjatuhan. Penampakannya/ibaratnya : lir sotya (dedaunan) murca saka ngembanan (kayu-kayuan).",
+      "Para petani membakar jerami yang tertinggal di sawah dan dimulai menanam palawija, sejenis belalang masuk ke tanah, daun-daunan berjatuhan. \"Lir Sotya (dedaunan) Murca Saka Ngembanan (kayu-kayuan)\".",
   },
   {
-    nama: "Karo (poso)",
+    nama: "Karo (Poso)",
     deskripsi:
-      "Palawija mulai tumbuh, pohon randu dan mangga, tanah mulai retak/berlubang. Penampakannya/ibaratnya : bantala (tanah) rengka (retak). Musim kapok bertunas tanam palawija kedua.",
+      "Palawija mulai tumbuh (waktu tanam palawija kedua), pohon randu dan mangga, tanah mulai retak/berlubang. \"Bantala (tanah) Rengka (retak)\".",
   },
   {
     nama: "Katelu",
     deskripsi:
-      "Musimnya/waktunya lahan tidak ditanami, sebab panas sekali, yang mana Palawija mulai di panen, berbagai jenis bambu tumbuh. Penampakannya/ibaratnya : suta (anak) manut ing Bapa (lanjaran). Musim ubi-ubian bertunas panen palawija.",
+      "Musimnya/waktunya lahan tidak ditanami, sebab panas sekali, palawija mulai di panen, berbagai jenis bambu tumbuh, dan ubi-ubian bertunas. \"Suta (anak) Manut ing Bapa (lanjaran)\".",
   },
   {
-    nama: "Kapat (sitra)",
+    nama: "Kapat (Sitra)",
     deskripsi:
-      "Sawah tidak ada (jarang) tanaman, sebab musim kemarau, para petani mulai menggarap sawah untuk ditanami padi gaga, pohon kapuk mulai berbuah, burung-burung kecil mulai bertelur. Penampakannya/ibaratnya : waspa kumembeng jroning kalbu (sumber). Musim sumur kering, kapuk berbuah, tanam pisang. Pada masa ini kemarau berakhir.",
+      "Sawah tidak ada (jarang) tanaman, sebab musim kemarau, sumur kering, para petani mulai menggarap sawah untuk ditanami padi, pohon randu mulai berbuah, burung-burung kecil mulai bertelur, waktu menanam pisang. \"Waspa kumembeng jroning kalbu (sumber)\".",
   },
   {
-    nama: "Kalima (manggala)",
+    nama: "Kalima (Manggala)",
     deskripsi:
-      "Mulai ada hujan, selokan sawah diperbaiki dan membuat tempat mengalir air di pinggir sawah, mulai menyebar padi gaga, pohon asem mulai tumbuh daun muda, ulat-ulat mulai keluar. Penampakannya/ibaratnya : pancuran (hujan) emas sumawur (hujannya) ing jagad. Musim turun hujan, pohon asam bertunas, pohon kunyit berdaun muda.",
+      "Mulai ada hujan, selokan sawah diperbaiki, mulai menyebar padi, pohon asam mulai tumbuh daun muda, kunyit bertunas, ulat mulai keluar. \"Pancuran (hujan) Emas Sumawur (turun deras) ing Jagad\".",
   },
   {
-    nama: "Kanem (naya)",
+    nama: "Kanem (Naya)",
     deskripsi:
-      "Para petani mulai menyebar bibit tanaman padi di pembenihan, banyak buah-buahan (durian, rambutan, manggis dan lain-lainnya), burung blibis mulai kelihatan di tempat-tempat berair. Penampakannya/ibaratnya : rasa mulya kasucian (sedang banyak-banyaknya buah-buahan). Musim buah-buahan mulai tua, mulai menggarap sawah.",
+      "Para petani mulai menyebar bibit tanaman padi di pembenihan, banyak buah-buahan (durian, rambutan, manggis dan lain-lainnya), burung blibis mulai kelihatan di tempat-tempat berair. Rasa Mulya Kasucian.",
   },
   {
-    nama: "Kapitu (palguna)",
+    nama: "Kapitu (Palguna)",
     deskripsi:
-      "Benih padi mulai ditanam di sawah, banyak hujan, banyak sungai yang banjir. Penampakannya/ibaratnya : wisa kentar ing ing maruta (bisa larut dengan angin, itu masanya banyak penyakit). Musim banjir, badai longsor mulai tandur.",
+      "Benih padi mulai ditanam di sawah, banyak hujan dan angin, banyak sungai yang banjir, banyak penyakit. \"Wisa Kentar ing Maruta\".",
   },
 ];

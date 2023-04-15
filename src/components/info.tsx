@@ -55,7 +55,6 @@ export default function Info(props: Info) {
     }
     getData();
   }, [props.date]);
-  console.log(api);
 
   const Show = () => {
     let hari = `${api?.jawa.weton}, ${api?.jawa.tanggal} ${api?.jawa.bulan} ${api?.jawa.tahun}`;

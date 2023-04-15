@@ -14,16 +14,16 @@ const config: DefaultSeoProps = {
     siteName: "Wetonizer App",
     images: [
       {
-        url: "/Banner Square.png",
+        url: "/Banner_Square.png",
         width: 512,
         height: 512,
-        alt: "Website Banner Twitter",
+        alt: "Wetonizer Logo with description, square picture",
       },
       {
         url: "/Banner.png",
-        width: 1000,
-        height: 500,
-        alt: "Website Banner",
+        width: 1200,
+        height: 630,
+        alt: "Wetonizer Logo with description",
       },
     ],
   },
