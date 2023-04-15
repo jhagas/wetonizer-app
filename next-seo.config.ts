@@ -14,13 +14,13 @@ const config: DefaultSeoProps = {
     siteName: "Wetonizer App",
     images: [
       {
-        url: "/Banner_Square.png",
+        url: "https://wetonizer.vercel.app/Banner_Square.png",
         width: 512,
         height: 512,
         alt: "Wetonizer Logo with description, square picture",
       },
       {
-        url: "/Banner.png",
+        url: "https://wetonizer.vercel.app/Banner.png",
         width: 1200,
         height: 630,
         alt: "Wetonizer Logo with description",
