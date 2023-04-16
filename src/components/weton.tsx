@@ -17,7 +17,7 @@ export default function Weton() {
 
   return (
     <div
-      className="flex flex-col w-full justify-center items-center"
+      className="flex flex-col w-full items-center"
       style={{
         height: "calc(100% - 5rem)",
       }}
@@ -26,12 +26,7 @@ export default function Weton() {
         Pilih Tanggal (Masehi)
       </p>
       <div className="flex flex-row items-center justify-center gap-2">
-        <div
-          onClick={() => seek(-1)}
-          className="p-4 bg-white hidden md:block dark:bg-zinc-800 z-50 cursor-pointer shadow-lg rounded-2xl text-stone-700 dark:text-stone-300"
-        >
-          <AiOutlineArrowLeft />
-        </div>
+        <Left className="hidden md:block" />
         <div className="flex transition-colors duration-300 justify-between items-center h-12 w-48 px-5 text-stone-700 dark:text-stone-300 bg-white dark:bg-zinc-700 rounded-xl border-transparent focus:outline-2 focus:outline-sky-500 shadow-md">
           <input
             value={convertFormat(date)}
@@ -47,12 +42,11 @@ export default function Weton() {
           />
           <IoCalendar size="22px" className="fixed translate-x-32" />
         </div>
-        <div
-          onClick={() => seek(1)}
-          className="p-4 bg-white hidden md:block dark:bg-zinc-800 z-50 shadow-lg cursor-pointer rounded-2xl text-stone-700 dark:text-stone-300"
-        >
-          <AiOutlineArrowRight />
-        </div>
+        <Right className="hidden md:block" />
+      </div>
+      <div className="flex gap-2 mt-3">
+        <Left className="block md:hidden" />
+        <Right className="block md:hidden" />
       </div>
       <Info date={convertFormat(date)} />
       <div className="fixed text-slate-500 text-xs bottom-3 text-center">
@@ -66,4 +60,32 @@ export default function Weton() {
       </div>
     </div>
   );
+
+  type classProps = {
+    className: string;
+  };
+
+  function Right(props: classProps) {
+    return (
+      <div
+        onClick={() => seek(1)}
+        className={`p-4 bg-white ${props.className} dark:bg-zinc-800 z-50 shadow-lg cursor-pointer rounded-2xl text-stone-700 dark:text-stone-300 flex gap-2 justify-center items-center`}
+      >
+        <p className="block md:hidden font-bold">Besok</p>
+        <AiOutlineArrowRight />
+      </div>
+    );
+  }
+
+  function Left(props: classProps) {
+    return (
+      <div
+        onClick={() => seek(-1)}
+        className={`p-4 bg-white ${props.className} dark:bg-zinc-800 z-50 cursor-pointer shadow-lg rounded-2xl text-stone-700 dark:text-stone-300 flex gap-2 justify-center items-center`}
+      >
+        <AiOutlineArrowLeft />
+        <p className="block md:hidden font-bold">Kemarin</p>
+      </div>
+    );
+  }
 }
