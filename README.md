@@ -48,5 +48,49 @@ I suppose you know a little bit about javanese calendar from articles above. I t
 | 5   | Minggu | -       |
 | 6   | Senin  | -       |
 
+## Public API for Developers
+API for this project is open to public, provided by Next.js API Routing. You can request javanese calendar information for specific AD date by making POST request to `http://wetonizer.vercel.app/api/jv` and providing `text/plain` body in this format `YYYY-MM-dd`
+
+```sh
+curl -X POST http://wetonizer.vercel.app/api/jv -H "Content-Type: text/plain" -d "2022-01-14"
+```
+
+### Response Type Format (JSON)
+```typescript
+type response = {
+  input: string;
+  jawa: {
+    weton: string;
+    neptu: number;
+    tanggal: number;
+    wuku: string;
+    bulan: string;
+    mangsa: {
+      nama: string;
+      deskripsi: string;
+    };
+    tahun: number;
+    warsa: string;
+    awalBulan: {
+      sura: string;
+      sapar: string;
+      mulud: string;
+      rabiulakir: string;
+      jumadilawal: string;
+      jumadilakir: string;
+      rejeb: string;
+      ruwah: string;
+      pasa: string;
+      syawal: string;
+      dulkaidah: string;
+      dulkijah: string;
+    };
+    windu: string;
+    lambang: string;
+    kurup: string;
+  };
+};
+```
+
 ## TO-DO
 - [ ] Dina ala as in this [article](https://primbonjawa21.blogspot.com/2019/01/dina-ala-twangke-samparwangke.html)
