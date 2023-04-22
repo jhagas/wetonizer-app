@@ -1,5 +1,7 @@
 # Wetonizer Web-App
 
+Available at https://wetonizer.vercel.app/
+
 ## Next JS + TypeScript
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
