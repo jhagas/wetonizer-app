@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: fixed;
+  width: 100%;
+  color: transparent;
+  background: transparent;
+}
